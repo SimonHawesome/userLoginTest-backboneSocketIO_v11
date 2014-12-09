@@ -265,7 +265,7 @@ $( document ).ready(function() {
 
         //check surface of paddle is hit
         //front
-        if(ball.y > paddle_p1.y && ball.y < paddle_p1.y + 125 && ball.vx > 0){
+        if(ball.y > paddle_p1.y - 5 && ball.y < paddle_p1.y + 130 && ball.vx > 0){
           console.log("paddle1");
           ball.x = paddle_p1.x + 60;
           ball.x -= ball.vx;
@@ -278,7 +278,7 @@ $( document ).ready(function() {
       //right paddle
       if(ball.x + ball.radius > paddle_p2.x){
 
-          if(ball.y > paddle_p2.y && ball.y < paddle_p2.y + 125 && ball.vx < 0){
+          if(ball.y > paddle_p2.y - 5 && ball.y < paddle_p2.y + 130 && ball.vx < 0){
           console.log("paddle2");
           ball.x = paddle_p2.x;
           ball.x += ball.vx;
